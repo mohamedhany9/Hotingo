@@ -8,7 +8,7 @@ class ApiClient {
 
     companion object {
 
-        val Base_URL: String = "https://hotingoapp.herokuapp.com"
+        val Base_URL: String = ""
 
         var retrofit: Retrofit? = null
 
