@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignUpActivity"
+        android:background="#FFFFFF">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/splash_logo"
+                android:padding="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/userImage"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="USer Name"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/userImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:id="@+id/userName"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/userName"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:id="@+id/userEmail"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/userEmail"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:inputType="phone"
+                android:id="@+id/userPhone"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/userPhone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:id="@+id/userPassword"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_below="@id/userPassword"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:id="@+id/userConfirmPassword"
+        />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@id/userConfirmPassword"
+                android:layout_marginTop="20dp"
+                android:id="@+id/userButtonRegister"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="140dp"
+                android:padding="10dp"
+        />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

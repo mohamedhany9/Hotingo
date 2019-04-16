@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".OrderOnRoomFragment">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="301"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/room_number_ID"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/room_Desc_ID"
+                android:layout_below="@id/room_number_ID"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/room_Desc_ID"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="24dp"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:id="@+id/room_Price_ID"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now"
+                    android:background="#2196F3"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/roomBookButton"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/room_img_Recycler"
+            >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

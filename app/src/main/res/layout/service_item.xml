@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+    >
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginRight="210dp"
+                android:id="@+id/ServiceImg"
+        />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:gravity="end"
+                    android:id="@+id/serviceTextTV"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service"
+                    android:textSize="12dp"
+                    android:textColor="#000000"
+                    android:gravity="end"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/serviceDescET"
+                    android:layout_below="@id/serviceTextTV"
+                    android:layout_marginTop="10dp"
+            />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
